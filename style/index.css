@@ -1,0 +1,20 @@
+
+header{
+    position:sticky;
+    
+    background-color: #efe3cd68;
+}
+
+.headercenter a {
+    color:#391d2c;
+    font-family: Kanit, serif;
+    font-size: 25px;
+    font-weight: 500;
+}
+#ofcanvas a {
+    color:#391d2c;
+    font-family: Kanit, serif;
+    font-size: 20px;
+    font-weight: 300;
+  
+}
