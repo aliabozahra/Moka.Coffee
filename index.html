@@ -8,18 +8,22 @@
     <link rel="stylesheet" href="./style/global.css">
     <link rel="stylesheet" href="./style/index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <!-- header start -->
-     <header class=" col-12 d-flex justify-content-center align-items-center gap-4 "">
-        <div class="headerleft col-lg-2 col-5 d-flex justify-content-center align-items-center gap-2 ">
-            <img src="./images/products/mokacoffe.Logo.png" class="d-lg-flex d-none" alt="mokacoffe.logo" style="width: 100px; border-radius: 50%; " >
-            <img src="./images/icons/search.svg" alt="search" style="width: 50px;">  
+     <header class=" col-12 d-flex justify-content-between align-items-center gap-4 ">
+        <div class="headerleft col-lg-2 col-3 d-flex justify-content-center align-items-center gap-2 ">
+            <img src="./images/products/mokacoffe.Logo.png" class="mokalogo d-lg-flex d-none p-1" alt="mokacoffe.logo" style="width: 100px; border-radius: 50%; " >
+            <img src="./images/icons/search.svg" alt="search" class="hoverheader p-2 rounded-3" style="width: 50px;">  
              <!-- ofcanvas start -->
-        <img src="./images/icons/menu.svg" class="d-lg-none d-flex" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop" alt="menu">
+        <img src="./images/icons/menu.svg" class="hoverheader d-lg-none d-flex p-2 rounded-5" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop" alt="menu">
           
-        <div class="offcanvas offcanvas-start rounded-5  d-lg-none d-flex "  data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel" style="width: 250px; height: 500px; background-color: #efe3cd;" >
+        <div class="offcanvas offcanvas-start rounded-5  d-lg-none d-flex  "  data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel" style="width: 250px; height: 500px; background-color: #efe3cd;" >
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="staticBackdropLabel" style=" color:#391d2c;
             font-family: Kanit, serif;
@@ -29,48 +33,118 @@
           </div>
           <div class="offcanvas-body d-flex flex-column rounded-3 gap-3 align-items-center" style="background-color: #efe3cd;">
             <div id="ofcanvas" class="d-flex flex-column  gap-3 justify-content-center">
-              <a href="./index.html">Home</a>
-              <a href="./pages/menu.html">menu</a>
-              <a href="./pages/products.html">products</a>
-              <a href="./pages/about.html">about</a>
-              <a href="./pages/Blog.html">Blog</a>
-              <a href="./pages/contact.html">Contact</a>
+                <a class="py-1 px-5 rounded-5 text-center"   href="./index.html">Home</a>
+                <a class="py-1 px-3 rounded-5  text-center" href="./pages/menu.html">menu</a>
+                <a class="py-1 px-3 rounded-5  text-center" href="./pages/products.html">products</a>
+                <a class="py-1 px-3 rounded-5  text-center" href="./pages/about.html">about</a>
+                <a class="py-1 px-3 rounded-5 text-center " href="./pages/Blog.html">Blog</a>
+                <a class="py-1 px-3 rounded-5 text-center " href="./pages/contact.html">Contact</a>
             </div>
           </div>
         </div>
         <!-- of canavas end  -->          
     
         </div>
-        <div class="headercenter container col-lg-6 col-md-4 d-lg-flex d-none justify-content-center align-items-center gap-5" style="width: 60%;">
-            <a href="./index.html">Home</a>
-            <a href="./pages/menu.html">menu</a>
-            <a href="./pages/products.html">products</a>
-            <a href="./pages/about.html">about</a>
-            <a href="./pages/Blog.html">Blog</a>
-            <a href="./pages/contact.html">Contact</a>
+        <div class="headercenter container col-lg-6 col-md-4 d-lg-flex d-none justify-content-center align-items-center  gap-3" style="width: 60%;">
+            <a class="py-1 px-3 rounded-5"   href="./index.html">Home</a>
+            <a class="py-1 px-3 rounded-5" href="./pages/menu.html">menu</a>
+            <a class="py-1 px-3 rounded-5" href="./pages/products.html">products</a>
+            <a class="py-1 px-3 rounded-5" href="./pages/about.html">about</a>
+            <a class="py-1 px-3 rounded-5" href="./pages/Blog.html">Blog</a>
+            <a class="py-1 px-3 rounded-5" href="./pages/contact.html">Contact</a>
         </div>
 
-          <div class="col-2 d-lg-none d-md-none d-flex">
-            <img src="./images/products/mokacoffe.Logo.png" alt="mokacoffe.logo" style="width: 80px; border-radius: 50%; " >
+          <div class="col-1 d-lg-none d-md-none d-flex">
+            <img src="./images/products/mokacoffe.Logo.png" alt="mokacoffe.logo" style="width: 70px; border-radius: 50%; " >
 
           </div>
 
 
 
-        <div class="headerright col-lg-2 col-6 d-flex justify-content-center align-items-center gap-lg-4 gap-1 ">
-            <img src="./images/icons/person.svg" alt="person" class="rounded-5">
-            <img src="./images/icons/favorite.svg" alt="love"  class="rounded-2">
-            <img src="./images/icons/shopping_cart.svg" alt="shopping_cart"  class="rounded-2" >
+        <div class="headerright col-lg-2 col-4 d-flex justify-content-center align-items-center gap-lg-4  ">
+            <img src="./images/icons/person.svg" alt="person" class="hoverheader rounded-3 hoverheader p-2" style="width: 60px;">
+            <img src="./images/icons/favorite.svg" alt="love"  class="hoverheader rounded-3 p-2" style="width: 60px;">
+            <img src="./images/icons/shopping_cart.svg" alt="shopping_cart"  class="hoverheader rounded-3  d-lg-flex d-none p-2" style="width: 60px;">
         </div>
 
      </header>
      <!-- header end  -->
+      
       <!-- hero section start -->
+ <div class="herosection">
+        <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide d-flex justify-content-between p-1 col-12 text-lg-center text-start">
+        <div class="contentt p-5 col-12 justify-content-center align-items-center">
+           <div class="filter d-flex flex-column  justify-content-center align-items-center gap-lg-4 gap-2 " style="padding: 180px 50px ;">
+            <p class=" col-lg-3 col-8 py-1 px-3 rounded-4 text-center fw-bold" style="background: wheat;">COFFEE BEANS</p>
+            <h1 class=" justify-content-center align-items-center d-flex col-lg-8 col-12 py-1 px-3 rounded-5" style=" color: wheat; background-color:#391d2c;
+            font-family: Kanit, serif;
+            font-size: 35px;
+            font-weight: 800;">MOKA <span style="color: yellow;"> COFFEE</span></h1>
+            <h2 class="animate__animated animate__bounceInUp  col-lg-6 col-12 text-center  " style=" 
+             color: wheat; 
+            font-family: Kanit, serif;
+            font-size: 35px;
+            font-weight: 800; 
+             animation-duration: 1.5s;">Beans made with love for you . . .</h2>
+            <a href="" class=" btn btn-dark rounded-4 fw-bold">shop now</a>
+           </div>
+        </div>
+      </div>
 
+      <div class="swiper-slide d-flex justify-content-between p-1 col-12">
+        <div class="contentt1 p-5 col-12 justify-content-center align-items-center">
+           <div class="filter d-flex flex-column  justify-content-center align-items-center gap-lg-4 gap-2 " style="padding: 180px 50px ;">
+            <p class=" col-lg-3 col-8 py-1 px-3 rounded-4 text-center fw-bold" style="background: wheat;">Artisan Roasting</p>
+            <h1 class=" justify-content-center align-items-center d-flex col-lg-8 col-12 py-1 px-3 rounded-5" style=" color: wheat; background-color:#391d2c;
+            font-family: Kanit, serif;
+            font-size: 35px;
+            font-weight: 800;">MOKA <span style="color: yellow;"> COFFEE</span></h1>
+            <h2 class="animate__animated animate__bounceInUp  col-lg-6 col-12 text-center " style=" 
+             color: wheat; 
+            font-family: Kanit, serif;
+            font-size: 35px;
+            font-weight: 800; 
+             animation-duration: 1.5s;">We handcraft each roast for perfection</h2>
+            <a href="" class=" btn btn-dark mt-2 rounded-4 fw-bold">shop now</a>
+           </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide d-flex justify-content-between p-1 col-12">
+        <div class="contentt p-5 col-12 justify-content-center align-items-center">
+           <div class="filter d-flex flex-column  justify-content-center align-items-center gap-lg-4 gap-2 " style="padding: 180px 50px ;">
+            <p class=" col-lg-3 col-8 py-1 px-3 rounded-4 text-center fw-bold" style="background: wheat;">Eco-Friendly</p>
+            <h1 class=" justify-content-center align-items-center d-flex col-lg-8 col-12 py-1 px-3 rounded-5" style=" color: wheat; background-color:#391d2c;
+            font-family: Kanit, serif;
+            font-size: 35px;
+            font-weight: 800;">MOKA <span style="color: yellow;"> COFFEE</span></h1>
+            <h2 class="animate__animated animate__bounceInUp  col-lg-6 col-12 text-center " style=" 
+             color: wheat; 
+            font-family: Kanit, serif;
+            font-size: 35px;
+            font-weight: 800; 
+             animation-duration: 1.5s;"> use sustainable materials for freshness</h2>
+            <a href="" class=" btn btn-dark mt-2 rounded-4 fw-bold">shop now</a>
+           </div>
+        </div>
+      </div>
+      
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination">
+    </div>
+  
+  </div>
+</div>
          <!-- hero section end -->
 <!-- marquee section start -->
-<div class="col-12  d-flex flex-column ">
-   <p class="col-6 mt-4 mb-3 p-4" style="color:#391d2c;
+<div class="col-12  d-flex flex-column mt-5 mb-5 ">
+   <p class="animate__animated animate__backInLeft col-lg-4 col-8 mt-4 mb-5 px-4 py-1 rounded-5" style="color:wheat; background-color: #391d2c;
    font-family: Kanit, serif;
    font-size: 20px;
    font-weight: 500;">SHOP BY CATEGORY</p>
@@ -78,47 +152,63 @@
 <div class="col-12 d-flex flex-wrap">
 
     <div class="col-lg-3 col-6 m-lg-0 mb-3 d-flex gap-3 justify-content-center align-items-center">
-        <img id="imgmarq" src="./images/products/Dark o Coffee Bean Product Badge Logo.png" alt="beanscoffee">
+        <div class="imgQual">
+            <div class="filter">
+            </div>
+            
+        </div>
        <div class="d-flex flex-column">
         <p style="color:#391d2c;
         font-family: Kanit, serif;
         font-size: 20px;
         font-weight: 500;">Quality</p>
-        <p>7 product</p>
+        <p>safety</p>
        </div>
     </div>
     
   
     <div class="col-lg-3 col-6 m-lg-0 mb-3 d-flex gap-3 justify-content-center align-items-center">
-        <img id="imgmarq" src="./images/products/Dark o Coffee Bean Product Badge Logo.png" alt="beanscoffee">
-       <div class="d-flex flex-column">
+        <div class="imgQual2">
+            <div class="filter">
+            </div>
+            
+        </div>
+         <div class="d-flex flex-column">
         <p style="color:#391d2c;
         font-family: Kanit, serif;
         font-size: 20px;
-        font-weight: 500;">Quality</p>
-        <p>7 product</p>
+        font-weight: 500;">Muscular build</p>
+        <p>sure</p>
        </div>
     </div>
     
     <div class="col-lg-3 col-6  d-flex gap-3 justify-content-center align-items-center">
-        <img id="imgmarq" src="./images/products/Dark o Coffee Bean Product Badge Logo.png" alt="beanscoffee">
+        <div class="imgQual3">
+            <div class="filter">
+            </div>
+            
+        </div>
        <div class="d-flex flex-column">
         <p style="color:#391d2c;
         font-family: Kanit, serif;
         font-size: 20px;
-        font-weight: 500;">Quality</p>
-        <p>7 product</p>
+        font-weight: 500;">Recovery</p>
+        <p>100%</p>
        </div>
     </div>
     
     <div class="col-lg-3 col-6 d-flex gap-3 justify-content-center align-items-center">
-        <img id="imgmarq" src="./images/products/Dark o Coffee Bean Product Badge Logo.png" alt="beanscoffee">
-       <div class="d-flex flex-column">
+        <div class="imgQual4">
+            <div class="filter">
+            </div>
+            
+        </div>
+        <div class="d-flex flex-column">
         <p style="color:#391d2c;
         font-family: Kanit, serif;
         font-size: 20px;
-        font-weight: 500;">Quality</p>
-        <p>7 product</p>
+        font-weight: 500;">Activity</p>
+        <p>speed</p>
        </div>
     </div>
     
@@ -128,38 +218,34 @@
 </div>
 <!--<!-- marquee section  end-->
  <!-- section 3 start -->
-  <div  class="section3 col-12 d-flex flex-wrap mt-4">
-
-    <div class="col-lg-6 col-12 d-flex flex-column order-1 order-lg-0">
+ <div class="section3  col-12 d-flex flex-wrap mt-5 mb-5">
+    <div class="col-lg-6 col-12 d-flex flex-column order-1 order-lg-0 p-lg-0 p-3">
         <div class="top justify-content-center p-5 ">
-            <h1> up to 70% off <br>And && OR</h1>
-            <a href=""> shop now</a>
+            <h1> Packed in the best <br>healthy ways</h1>
+            <a href="" class=" btn btn-dark mt-2"> shop now</a>
         </div>
         <div class="bottom bg-dark">
             <div class="filter col-12 d-flex flex-column p-lg-5 p-3 gap-2 ">
-                <p style="font-family: MarkaziText, serif;  font-size: 30px;
-        font-weight: 700;  color: white;">Big sale</p>
+                <p class="animate__animated animate__rotateInUpLeft" style="font-family: MarkaziText, serif;  font-size: 50px;
+        font-weight: 700;  color: white;">Natural coffee beans...</p>
                 <h1 style="font-family: MarkaziText, serif;  font-size: 35px;
-        font-weight: 900;  color: white;">up to 70% off</h1>
-              <a href="">shop now</a> 
+        font-weight: 900;  color: white;">Best price</h1>
             </div>
         </div>
         
     </div>
     <div id="right" class="col-lg-6 col-12 order-0 order-lg-1 ">
         <div class="filter col-12 d-flex flex-column align-items-center p-5 gap-2 justify-content-center">
-            <p style="font-family: MarkaziText, serif;  font-size: 30px;
-    font-weight: 700;  color: white;">Big sale</p>
-            <h1 style="font-family: MarkaziText, serif;  font-size: 35px;
-    font-weight: 900;  color: white;">up to 70% off</h1>
-            <h1 style="font-family: MarkaziText, serif;  font-size: 35px;
-    font-weight: 900; color: white;">And && OR</h1>
-        </div>
+            <p style="font-family: MarkaziText, serif;  font-size: 40px;
+    font-weight: 700;  color: wheat;">To get the best taste... </p>
+            <h1 style="font-family: MarkaziText, serif;  font-size: 40px;
+    font-weight: 900;  color: wheat;">Moka Coffee</h1>
     </div>
-   
   </div>
+ </div>
+
   <!-- text section start -->
-   <div class="textsection d-flex flex-row justify-content-center align-items-center col-12 gap-1 p-4">
+   <div class="textsection d-flex flex-row justify-content-center align-items-center col-12 gap-1 p-4 mt-5 mb-5">
     
     <h1 style=" color:#391d2c;
     font-family: Oxanium, serif;
@@ -171,7 +257,222 @@
     font-size: 25px;
     font-weight: 500;">customers trust Moka Coffee and the quality beans</p>
    </div>
-     <!-- text section end -->
+     <!-- text section  end -->
+      <!-- section 4 start  -->
+       <div class="section4  col-12 d-flex mt-3 flex-column flex-lg-row mt-5 mb-5">
+        <div class="left col-lg-6 col-12 justify-content-center align-items-center d-flex flex-column">
+            <h1 class=" justify-content-center align-items-center d-flex col-lg-8 col-10 py-1 px-3 rounded-5" style=" color: wheat; background-color:#391d2c;
+            font-family: Kanit, serif;
+            font-size: 35px;
+            font-weight: 800;">MOKA <span style="color: yellow;"> COFFEE</span></h1>
+            <div class="col-12 d-flex justify-content-center align-items-center px-5  ">
+                <p class="text-center" style=" color:#391d2c;
+            font-family: Markazi, serif;
+            font-size: 25px;
+            font-weight: 400;">our top priority is delivering the highest quality coffee beans while ensuring an exceptional customer experience. We carefully source and roast our beans to bring you rich, authentic flavors. Your satisfaction is at the heart of everything we do.</p>
+            </div>
+        </div>
+        <div class="right col-lg-6 col-12  d-flex justify-content-center align-items-center">
+            <img src="./images/products/hand-1.jpg" alt="" class="rounded-5">
+
+        </div>
+
+       </div>
+<!-- section 4 end  -->
+ <!-- <!-- sectionicons start  --> 
+   <div class="sectionicons col-12 d-flex flex-lg-row flex-column justify-content-center align-items-center mt-5 mb-5 ">
+    <div class=" col-lg-4 col-12  d-flex  justify-content-center align-items-center flex-column p-4 ">
+        <img src="./images/icons/coffee-beans.svg" alt="" style="width: 90px;">
+        <h1>Coffee beans</h1>
+        <p> quality comes first we source and roast premium coffee .</p>
+        <button class="bottonn py-1 px-4 rounded-4 ">Read more</button>
+    </div>
+    <div class=" col-lg-4 col-12 d-flex  justify-content-center align-items-center flex-column p-4 ">
+        <img src="./images/icons/speed.svg" alt="" style="width: 90px;">
+        <h1>Speed</h1>
+        <div class="col-12 d-flex justify-content-center align-items-center ">
+            <p>We deliver your coffee anywhere for free and  the speed.</p>
+
+        </div>
+        <button class="bottonn py-1 px-4 rounded-4">Read more</button>
+    </div>
+    <div class=" col-lg-4 col-12 d-flex  justify-content-center align-items-center flex-column p-4 ">
+        <img src="./images/icons/coffee-mmuugg.svg" alt="" style="width: 90px;">
+        <h1>Aromatic Taste</h1>
+        <p>Rich, inviting, and utterly tantalizing, the aromatic taste of coffee.</p>
+        <button class="bottonn py-1 px-4 rounded-4">Read more</button>
+    </div>
+
+   </div>
+    <!-- <!-- sectionicons end  --> 
+      <!-- sectionproudcut strat -->
+       <div class="sectionproudcut d-flex flex-wrap flex-lg-row flex-column ">
+        <div class="row w-100">
+
+        <div class="col-lg-3 col-12 d-flex justify-content-center align-items-center flex-column">
+        <h1> best<br class=" d-none d-lg-flex"> coffee <span>Beans</span> </h1>
+        <a href="0" class=" d-none d-lg-flex"> See more >></a>
+    </div>
+
+    <div class="productfull col-lg-3 col-6 d-flex flex-column p-4 ">
+        <div id="product" class="product col-12 mb-4 position-relative">
+           <div id="item" class="d-flex col-12 flex-column justify-content-between align-items-center">
+          
+            <button class="col-lg-8 col-12 position-absolute bottom-0 rounded-4 py-1 px-2 text-center">Select </button>
+           </div>
+        </div>
+        <div class=" d-flex flex-column gap-1"> 
+            <p style="text-decoration: none ; color: #391d2c; font-weight: 600;">كلاسيك ساده /محوج 250جم</p>
+            <p> <b>125EG</b> <del>150EG<del></p>
+
+        </div>
+    </div>
+    <div class="productfull col-lg-3 col-6 d-flex flex-column p-4 ">
+        <div id="product2" class="product col-12 mb-4 position-relative">
+           <div id="item" class="d-flex col-12 flex-column justify-content-between align-items-center">
+          
+            <button class="col-lg-8 col-12 position-absolute bottom-0 rounded-4 py-1 px-2 text-center">Select </button>
+           </div>
+        </div>
+        <div class=" d-flex flex-column gap-1"> 
+            <p style="text-decoration: none ; color: #391d2c; font-weight: 600;"> سادة اسبيشيال/ 250جم</p>
+            <p> <b>125EG</b> <del>150EG<del></p>
+        </div>
+    </div>
+    <div class="productfull col-lg-3 col-6 d-flex flex-column p-4 ">
+        <div id="product3" class="product col-12 mb-4 position-relative">
+           <div id="item" class="d-flex col-12 flex-column justify-content-between align-items-center">
+          
+            <button class="col-lg-8 col-12 position-absolute bottom-0 rounded-4 py-1 px-2 text-center">Select </button>
+           </div>
+        </div>
+        <div class=" d-flex flex-column gap-1"> 
+            <p style="text-decoration: none ; color: #391d2c; font-weight: 600;">محوج اسبيشيال/ 250جم </p>
+            <p> <b>125EG</b> <del>150EG<del></p>
+
+        </div>
+    </div>
+    <div class="productfull col-lg-3 col-6 d-flex flex-column p-4 ">
+        <div id="product4" class="product col-12 mb-4 position-relative">
+           <div id="item" class="d-flex col-12 flex-column justify-content-between align-items-center">
+          
+            <button class="col-lg-8 col-12 position-absolute bottom-0 rounded-4 py-1 px-2 text-center">Select </button>
+           </div>
+        </div>
+        <div class=" d-flex flex-column gap-1"> 
+            <p style="text-decoration: none ; color: #391d2c; font-weight: 600;">50جم اسبيشيال ساده/محوج </p>
+            <p> <b>50EG</b> <del>65EG<del></p>
+
+        </div>
+    </div>
+    <div class="productfull col-lg-3 col-6 d-flex flex-column p-4 ">
+        <div id="product5" class="product col-12 mb-4 position-relative">
+           <div id="item" class="d-flex col-12 flex-column justify-content-between align-items-center">
+          
+            <button class="col-lg-8 col-12 position-absolute bottom-0 rounded-4 py-1 px-2 text-center">Select </button>
+           </div>
+        </div>
+        <div class=" d-flex flex-column gap-1"> 
+            <p style="text-decoration: none ; color: #391d2c; font-weight: 600;">ممتاز ساده 125جم            </p>
+            <p> <b>125EG</b> <del>140EG<del></p>
+
+        </div>
+    </div>
+    <div class="productfull col-lg-3 col-6 d-flex flex-column p-4 ">
+        <div id="product6" class="product col-12 mb-4 position-relative">
+           <div id="item" class="d-flex col-12 flex-column justify-content-between align-items-center">
+          
+            <button class="col-lg-8 col-12 position-absolute bottom-0 rounded-4 py-1 px-2 text-center">Select </button>
+           </div>
+        </div>
+        <div class=" d-flex flex-column gap-1"> 
+            <p style="text-decoration: none ; color: #391d2c; font-weight: 600;">بن فليفر /ربع</p>
+            <p><b>130EG</b> <del>150EG<del></p>
+
+        </div>
+    </div>
+    <div class="productfull col-lg-3 col-6 d-flex flex-column p-4 ">
+        <div id="product7" class="product col-12 mb-4 position-relative">
+           <div id="item" class="d-flex col-12 flex-column justify-content-between align-items-center">
+          
+            <button class="col-lg-8 col-12 position-absolute bottom-0 rounded-4 py-1 px-2 text-center">Select </button>
+           </div>
+        </div>
+        <div class=" d-flex flex-column gap-1"> 
+            <p style="text-decoration: none ; color: #391d2c; font-weight: 600;">ممتاز محوج 250جم            </p>
+            <p> <b>125EG</b> <del>180EG<del></p>
+
+        </div>
+    </div>
+     </div>
+
+       </div>
+    <!-- sectionproudcut end -->
+     <!-- slidersection -->
+      <div class="slidersection col-12 rounded-5">
+        <video class="col-12 rounded-3 " autoplay muted loop src="./images/products/Black Modern Coffee Video.mp4"></video>
+        <div class="filter rounded-3 col-12 d-flex flex-column p-lg-5 p-3 gap-2 ">
+            <p style="font-family: MarkaziText, serif;  font-size: 30px;
+    font-weight: 700;  color: white;">Moka coffee...</p>
+            <h1 style="font-family: MarkaziText, serif;  font-size: 35px;
+    font-weight: 900;  color: white;">Not just any moka, it’s the moka</h1>
+          <a href="">shop now</a> 
+        </div>
+      </div>
+<!-- footer start -->
+      <footer class="container-fluid d-flex flex-column flex-lg-row justify-content-between align-items-center p-3">
+    
+        <div class="col-lg-3 col-12 d-flex flex-column text-lg-start text-center order-lg-0 order-1 justify-content-center align-items-center">
+            <img class="mb-3" src="./images/products/mokacoffe.Logo.png" alt="mokacoffe.logo" style="width: 70px; border-radius: 50%;">
+            <p class="fw-bold">Phone: 0 114 957 4788</p>
+            <p class="fw-bold">Place: Online store</p>
+            <p class="fw-bold">Working hours: 24 hours</p>
+        </div>
+    
+        <div class="pages col-lg-3 col-12 d-flex flex-column order-lg-1 order-2 text-lg-start text-center justify-content-center align-items-center">
+            <h4 class="fw-bolder">Pages</h4>
+            <a href="./index.html">Home</a>
+            <a href="./pages/menu.html">Menu</a>
+            <a href="./pages/products.html">Products</a>
+            <a href="./pages/about.html">About</a>
+            <a href="./pages/Blog.html">Blog</a>
+            <a href="./pages/contact.html">Contact</a>
+        </div>
+    
+       <div class="col-lg-5 col-12 d-flex flex-column gap-2 text-lg-start text-center order-lg-2 order-0 justify-content-center align-items-center">
+    <div class="gap-3 justify-content-center align-items-center w-100">
+        <h4 class="col-lg-7 col-10 text-lg-start text-center">SIGN UP FOR EMAIL</h4>
+        <p class="col-lg-7 col-10 text-lg-start text-center">Enjoy 15% off* your first order when you sign up</p>
+        <form action="" class="d-flex flex-column flex-lg-row  mb-3 w-100">
+            <input class="py-1 px-3 col-lg-7 col-12 text-lg-start text-center" type="email" placeholder="Your e-mail address">
+            <input class="btn btn-dark rounded-0 col-lg-3 col-12 mt-2 mt-md-0" type="button" value="SUBSCRIBE">
+        </form>
+
+        <div class="p-2 d-flex gap-2 justify-content-center">
+            <a href="#" target="_blank">
+                <img class="soci" src="./images/icons/facebook.svg" width="30px" alt="Facebook">
+            </a>
+            <a href="#" target="_blank">
+                <img class="soci" src="./images/icons/instagram.svg" width="30px" alt="Instagram">
+            </a>
+            <a href="#" target="_blank">
+                <img class="soci" src="./images/icons/whatsapp.svg" width="30px" alt="WhatsApp">
+            </a>
+        </div>
+    </div>
+    <div class="d-flex flex-column align-items-center w-100 m-lg-0 m-4">
+        <h4>Payment Methods</h4>
+        <div class="text-lg-start text-center d-flex gap-3 flex-wrap justify-content-center">
+            <img src="./images/icons/instabay.png" style="width: 60px;" alt="Instapay">
+            <img src="./images/icons/E&webp.jpg" style="width: 60px;" alt="E&">
+            <img src="./images/icons/-icons-money-png.png" style="width: 60px;" alt="Cash">
+        </div>
+    </div>
+</div>
+    
+    </footer>
+    <!-- footer end -->
+    
 
 
 
@@ -194,6 +495,11 @@
 
 
 
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./index.js"></script>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
